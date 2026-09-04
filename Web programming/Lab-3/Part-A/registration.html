@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cultural Festival Registration</title>
+</head>
+<body>
+    <h2>Cultural Festival Registration Form</h2>
+    
+    <form action="#" method="post">
+        <!-- 1. Text Boxes -->
+        <p>
+            <label for="name">Participant Name:</label>
+            <input type="text" id="name" name="participant_name" required>
+        </p>
+        
+        <p>
+            <label for="institute">Institute Name:</label>
+            <input type="text" id="institute" name="institute_name" required>
+        </p>
+
+        <!-- 2. Option Buttons (Radio Buttons) -->
+        <p>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </p>
+
+        <!-- 3. Drop-down List -->
+        <p>
+            <label for="category">Select Event Category:</label>
+            <select id="category" name="event_category">
+                <option value="music">Music / Singing</option>
+                <option value="dance">Dance</option>
+                <option value="drama">Theater / Drama</option>
+                <option value="arts">Fine Arts</option>
+            </select>
+        </p>
+
+        <!-- 4. Checkboxes -->
+        <p>
+            <label>Select Accommodations Needed:</label><br>
+            <input type="checkbox" id="food" name="needs" value="food">
+            <label for="food">Food Provided</label><br>
+            <input type="checkbox" id="stay" name="needs" value="stay">
+            <label for="stay">Hotel Stay / Lodging</label>
+        </p>
+
+        <!-- 5. Text Area -->
+        <p>
+            <label for="queries">Special Requests or Queries:</label><br>
+            <textarea id="queries" name="user_queries" rows="4" cols="40" placeholder="Type here..."></textarea>
+        </p>
+
+        <!-- 6. Submit and Reset Buttons -->
+        <p>
+            <input type="submit" value="Submit Registration">
+            <input type="reset" value="Clear Form">
+        </p>
+    </form>
+</body>
+</html>
